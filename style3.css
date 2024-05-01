@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+ 
+}
+#navl{
+    display: flex;
+ justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+    margin-right:20px ;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+  opacity: .6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: azure;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: burlywood;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+  background-image: url(https://tse2.mm.bing.net/th/id/OIP.rmh1FMbIl5c1xPP2VnbvdgHaFj?w=223&h=167&c=7&o=5&dpr=1.3&pid=1.7);
+  background-size: cover;
+  background-position: center;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+background-image: url(https://wallup.net/wp-content/uploads/2019/09/802008-nature-landscape-beauty-beautiful-forest-tree-water-bubble.jpg);
+background-size: cover;
+background-position: center;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+   background-image: url(https://th.bing.com/th/id/OIP.1pQEQ-1lyU5NxJmCx4rZ8wHaLW?pid=ImgDet&w=188&h=288&c=7&dpr=1.3);
+   background-size: cover;
+   background-position: center;
+}
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+        #main #left{
+            width: 100%;
+        }
+        #main #right{
+            width: 100%;
+        }
+    }
+}
